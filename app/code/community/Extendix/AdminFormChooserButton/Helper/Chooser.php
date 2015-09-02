@@ -294,7 +294,7 @@ class Extendix_AdminFormChooserButton_Helper_Chooser
             $config['input_id'] = $config['input_name'];
         }
 
-        $element = $fieldset->addField($config['input_id'], 'label', $inputConfig);
+        $element = $fieldset->addField($config['input_id'], 'text', $inputConfig);
         $element->setValue($dataModel->getData($element->getId()));
         $dataModel->setData($element->getId(), '');
 
